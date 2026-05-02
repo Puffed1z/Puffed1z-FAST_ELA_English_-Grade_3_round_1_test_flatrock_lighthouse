@@ -457,7 +457,7 @@ function saveAttempt(score,total,snap){
 }
 // Teacher log: press T+E+A together
 (function(){const k={};document.addEventListener('keydown',e=>{k[e.key.toUpperCase()]=true;if(k['T']&&k['E']&&k['A'])showTeacherLog();});document.addEventListener('keyup',e=>{delete k[e.key.toUpperCase()];});})();
-const TEACHER_PIN='1234';
+const TEACHER_PIN='123455';
 function teacherAccess(){
   const pin=prompt('Enter teacher PIN to view attempt log:');
   if(pin===null)return;
